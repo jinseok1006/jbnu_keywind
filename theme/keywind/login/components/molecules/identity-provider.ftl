@@ -1,10 +1,7 @@
 <#import "/assets/providers/providers.ftl" as providerIcons>
 
 <#macro kw providers=[]>
-  <div class="pt-4 separate text-secondary-600 text-sm">
-    ${msg("identity-provider-login-label")}
-  </div>
-  <div class="gap-4 grid grid-cols-3">
+  <div class="gap-4 grid grid-cols-1">
     <#list providers as provider>
       <#switch provider.alias>
         <#case "apple">
@@ -77,5 +74,8 @@
         </#if>
       </a>
     </#list>
+  </div>
+  <div class="pt-4 separate text-secondary-600 text-sm">
+    ${msg("identity-provider-login-label")}
   </div>
 </#macro>

@@ -42,12 +42,7 @@
         ${kcSanitize(message.summary)?no_esc}
       </@alert.kw>
     </#if>
-    <#nested "form">
-    <#if displayRequiredFields>
-      <p class="text-secondary-600 text-sm">
-        * ${msg("requiredFields")}
-      </p>
-    </#if>
+    <#nested "socialProviders">
     <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
       <form action="${url.loginAction}" method="post">
         <input name="tryAnotherWay" type="hidden" value="on" />
@@ -56,7 +51,12 @@
         </@button.kw>
       </form>
     </#if>
-    <#nested "socialProviders">
+    <#nested "form">
+    <#if displayRequiredFields>
+      <p class="text-secondary-600 text-sm">
+        * ${msg("requiredFields")}
+      </p>
+    </#if>
   </#assign>
 
   <#assign cardFooter>

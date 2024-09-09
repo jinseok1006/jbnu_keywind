@@ -18,6 +18,10 @@
 >
   <#if section="header">
     ${msg("loginAccountTitle")}
+  <#elseif section="socialProviders">
+    <#if realm.password && social.providers??>
+      <@identityProvider.kw providers=social.providers />
+    </#if>
   <#elseif section="form">
     <#if realm.password>
       <@form.kw
@@ -78,10 +82,6 @@
           ${msg("doRegister")}
         </@link.kw>
       </div>
-    </#if>
-  <#elseif section="socialProviders">
-    <#if realm.password && social.providers??>
-      <@identityProvider.kw providers=social.providers />
     </#if>
   </#if>
 </@layout.registrationLayout>
