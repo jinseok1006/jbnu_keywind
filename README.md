@@ -127,3 +127,9 @@ pnpm build:jar
 - **커밋**: "Social Login first"
 - **수정 파일**: template.ftl, login.ftl, identity-provider.ftl
 -  2024/09/09. by eunhyekim811
+
+### 수정 사항
+- **로그인 화면**: 로그인 화면에 안내문구 및 문의 관련 문장 삽입
+- **커밋**: "login guide"
+- **수정 파일**: template.ftl, aler.ftl
+-  2024/09/10. by eunhyekim811
