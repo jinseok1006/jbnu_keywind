@@ -12,6 +12,9 @@
     <#case "warning">
       <#assign colorClass="bg-orange-100 text-orange-600">
       <#break>
+    <#case "self">
+      <#assign colorClass="bg-gray-100 text-gray-600">
+      <#break>
     <#default>
       <#assign colorClass="bg-blue-100 text-blue-600">
   </#switch>

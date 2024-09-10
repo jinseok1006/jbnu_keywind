@@ -42,6 +42,9 @@
         ${kcSanitize(message.summary)?no_esc}
       </@alert.kw>
     </#if>
+    <@alert.kw color="self">
+      ${msg("guide")}
+    </@alert.kw>
     <#nested "socialProviders">
     <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
       <form action="${url.loginAction}" method="post">
@@ -57,6 +60,8 @@
         * ${msg("requiredFields")}
       </p>
     </#if>
+    <br>
+    <p>문의 : 전북대 oslab( 이메일 )
   </#assign>
 
   <#assign cardFooter>
