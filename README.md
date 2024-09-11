@@ -124,12 +124,18 @@ pnpm build:jar
 
 ### 수정 사항
 - **로그인 화면**: 로그인 화면 생성 시 일반 로그인보다 소셜 로그인의 위치가 가장 위에 오도록 바꿈.
-- **커밋**: "Social Login first"
+- **commit message**: "Social Login first"
 - **수정 파일**: template.ftl, login.ftl, identity-provider.ftl
 -  2024/09/09. by eunhyekim811
 
 ### 수정 사항
 - **로그인 화면**: 로그인 화면에 안내문구 및 문의 관련 문장 삽입
-- **커밋**: "login guide"
-- **수정 파일**: template.ftl, aler.ftl
+- **commit message**: "login guide"
+- **수정 파일**: template.ftl, alert.ftl
 -  2024/09/10. by eunhyekim811
+
+### 수정 사항
+- **로그인 화면**: 로그인 화면에서만 안내문구 뜨도록 수정
+- **commit message**: "guide at only login page"
+- **수정 파일**: template.ftl, identity-provider.ftl
+-  2024/09/11. by eunhyekim811
