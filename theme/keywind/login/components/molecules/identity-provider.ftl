@@ -1,6 +1,10 @@
 <#import "/assets/providers/providers.ftl" as providerIcons>
+<#import "../atoms/alert.ftl" as alert>
 
 <#macro kw providers=[]>
+  <@alert.kw color="self">
+    ${msg("guide")}
+  </@alert.kw>
   <div class="gap-4 grid grid-cols-1">
     <#list providers as provider>
       <#switch provider.alias>
