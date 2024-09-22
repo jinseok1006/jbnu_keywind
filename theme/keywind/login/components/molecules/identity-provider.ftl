@@ -3,7 +3,10 @@
 
 <#macro kw providers=[]>
   <@alert.kw color="self">
-    ${msg("guide")}
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li>${msg("guide1")}</li>
+      <li>${msg("guide2")}</li>
+    </ul>
   </@alert.kw>
   <div class="gap-4 grid grid-cols-1">
     <#list providers as provider>
