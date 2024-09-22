@@ -67,15 +67,16 @@
       </#switch>
 
       <a
-        class="${colorClass} border border-secondary-200 flex justify-center py-2 rounded-lg hover:border-transparent"
+        class="${colorClass} border border-secondary-200 flex justify-center py-2 rounded-lg hover:border-transparent bg-blue-800"
         data-provider="${provider.alias}"
         href="${provider.loginUrl}"
         type="button"
       >
         <#if providerIcons[provider.alias]??>
-          <div class="h-6 w-6">
+          <div class="h-6 w-6 mr-3">
             <@providerIcons[provider.alias] />
           </div>
+          <span class="text-white">Sign in with Google</span>
         <#else>
           ${provider.displayName!}
         </#if>
