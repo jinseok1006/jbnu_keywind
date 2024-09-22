@@ -139,3 +139,21 @@ pnpm build:jar
 - **commit message**: "guide at only login page"
 - **수정 파일**: template.ftl, identity-provider.ftl
 -  2024/09/11. by eunhyekim811
+
+### 수정 사항
+- **로그인 화면**: 로그인 화면 안내문구 개조식으로 수정
+- **commit message**: "login guide remodeling(bullet point)"
+- **수정 파일**: identity-provider.ftl
+-  2024/09/22. by eunhyekim811
+
+### 수정 사항
+- **소셜 로그인 버튼**: 소셜 로그인 버튼 배경색 및 문구 추가
+- **commit message**: "google button remodeling"
+- **수정 파일**: identity-provider.ftl
+-  2024/09/22. by eunhyekim811
+
+### 수정 사항
+- **로그인 버튼**: 로그인 버튼 마우스 오버 시 색 조정
+- **commit message**: "button remodeling - hover"
+- **수정 파일**: button.ftl
+-  2024/09/22. by eunhyekim811
