@@ -30,16 +30,12 @@ jobs:
         run: |
           pnpm build
           pnpm build:jar
-        
-      - name: Rename JAR file
-        run: |
-          cp out/keywind.jar out/jigsso-keywind-v${{ github.run_number }}.jar
 
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          files: out/jigsso-keywind-v${{ github.run_number }}.jar
+          files: out/keywind.jar
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
           draft: false
