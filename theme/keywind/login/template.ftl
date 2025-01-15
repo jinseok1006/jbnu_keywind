@@ -58,7 +58,7 @@
       </p>
     </#if>
     <br>
-    <p>문의 : 전북대 oslab( 이메일 )
+    <p>문의 : 전북대 JEduTools 운영팀 ( jedutools@gmail.com )
   </#assign>
 
   <#assign cardFooter>
